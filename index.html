@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#fffaf4">
+        <meta name="description" content="Protótipo educativo Pequenos Gigantes: informação acolhedora sobre doação de órgãos infantis.">
+        <title>Pequenos Gigantes — informação que acolhe</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <div class="presentation">
+            <header class="presentation-header">
+                <a class="brand" href="#inicio" aria-label="Pequenos Gigantes, voltar ao início" data-go="welcome">
+                    <span class="brand-mark" aria-hidden="true">♡</span>
+                    <span><strong>pequenos gigantes</strong><small>informação que acolhe</small></span>
+                </a>
+                <div class="header-center"><span class="live-dot"></span> PROTÓTIPO ACADÊMICO <span class="header-divider">/</span> EXPERIÊNCIA INTERATIVA</div>
+                <button class="reset-button" id="reset-prototype" type="button"><span aria-hidden="true">↻</span> Reiniciar</button>
+            </header>
+
+            <main class="presentation-main">
+                <aside class="screen-rail" aria-label="Telas do protótipo">
+                    <p class="rail-label">JORNADA</p>
+                    <div id="screen-list" class="screen-list"></div>
+                    <div class="rail-note"><span aria-hidden="true">✳</span><p>Um passo de cada vez.<br><strong>Sem pressa, sem pressão.</strong></p></div>
+                </aside>
+
+                <section class="device-stage" aria-label="Prévia do aplicativo">
+                    <div class="stage-caption"><span class="stage-caption-dot"></span> PRÉVIA DO APLICATIVO <span class="stage-caption-line"></span> <span id="stage-number">01 / 10</span></div>
+                    <div class="phone-frame">
+                        <div class="phone-screen">
+                            <div class="status-bar"><span>9:41</span><span class="status-icons" aria-label="Sinal e bateria">● ● ▰</span></div>
+                            <div id="app-root"></div>
+                        </div>
+                    </div>
+                    <div class="stage-controls">
+                        <button type="button" id="previous-screen" aria-label="Tela anterior">←</button>
+                        <div class="stage-progress" id="stage-progress" aria-label="Progresso da jornada"></div>
+                        <button type="button" id="next-screen" aria-label="Próxima tela">→</button>
+                    </div>
+                </section>
+
+                <aside class="context-panel" aria-live="polite">
+                    <div class="context-topline"><span class="context-kicker">POR TRÁS DA TELA</span><span class="context-star" aria-hidden="true">✳</span></div>
+                    <p class="context-count" id="context-count">TELA 01</p>
+                    <h1 id="context-title">Boas-vindas</h1>
+                    <p class="context-description" id="context-description"></p>
+                    <div class="context-divider"></div>
+                    <p class="context-principle-label">DECISÕES DE EXPERIÊNCIA</p>
+                    <ul id="context-principles" class="context-principles"></ul>
+                    <div class="context-tip"><span aria-hidden="true">♡</span><p>Você pode explorar as telas pelo menu, pelos botões ou navegando dentro do próprio app.</p></div>
+                    <p class="disclaimer">Conteúdo educativo. Não substitui a orientação da equipe de saúde.</p>
+                </aside>
+            </main>
+            <footer class="presentation-footer"><span>PEQUENOS GIGANTES</span><span>PROTÓTIPO UX/UI · 10 TELAS</span><span>FONTES OFICIAIS · LINGUAGEM ACOLHEDORA</span></footer>
+        </div>
+    </body>
+</html>
